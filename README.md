@@ -7,15 +7,20 @@
 [![markdown](https://github.com/wnowicki/pytemp/workflows/Markdown%20Lint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
 [![License: GPLv3](https://img.shields.io/badge/License-MIT-blue.svg)](https://license.md/licenses/mit-license/)
 
-## Test
+## How to run
 
-```shell
-uv run pytest
-```
+Requirements:
+-Python 3.x
+-Packets manager uv 
+
+git clone https://github.com/Solordark/Projekt_AI_Polecanie_Filmow.git
+cd Projekt_AI_Polecanie_Filmow
+uv run app/main.py
+
 
 ## Security
 
-If you discover any security-related issues, please email [email](mailto:email) instead of using the issue tracker.
+If you discover any security-related issues, please email [boryssiwierski@gmail.com](mailto:email) instead of using the issue tracker.
 
 ---
-Copyright (c) [year] [fullname]
+Copyright (c) [2026] [Borys Siwierski]
