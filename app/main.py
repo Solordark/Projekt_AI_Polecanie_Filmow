@@ -187,13 +187,13 @@ def polec_filmy(id_filmu, df, ile_polecic=5):
             + (0.05 * pod_budzet)
         )
 
-        """
+        
         # --- Filtr przez oceny   ---
         if rzad.vote_count > 100:
             wynik_koncowy = wynik_koncowy * (rzad.vote_average / 10.0)
         else:
             wynik_koncowy = wynik_koncowy * 0.5
-        """
+        
         # Zapisujemy tytul i wynik
         wyniki_podobienstwa.append((rzad.title, wynik_koncowy, rzad.vote_average))
 
