@@ -14,8 +14,8 @@ Requirements:
 -Packets manager uv 
 
 git clone https://github.com/Solordark/Projekt_AI_Polecanie_Filmow.git
-cd Projekt_AI_Polecanie_Filmow
-uv run app/main.py
+cd Projekt_AI_Polecanie_Filmow/app
+uv run main.py
 
 
 ## Security

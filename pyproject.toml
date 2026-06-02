@@ -5,6 +5,10 @@ dynamic = ["version"]
 requires-python = ">=3.14"
 readme = "README.md"
 license = { file = "LICENSE.md"}
+dependencies = [
+    "numpy>=2.4.4",
+    "pandas>=3.0.2",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/wnowicki/pytemp"
