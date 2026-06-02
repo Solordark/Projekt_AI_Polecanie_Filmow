@@ -101,8 +101,6 @@ df["release_date"] = pd.to_datetime(df["release_date"], errors="coerce").dt.year
 df["release_date"] = df["release_date"].fillna(0).astype(int)  # brak na 0
 
 
-#    DEBUG  print(df.head(3))
-
 
 # =============== Przygotowanie zmiennych
 
@@ -187,13 +185,13 @@ def polec_filmy(id_filmu, df, ile_polecic=5):
             + (0.05 * pod_budzet)
         )
 
-        """
+        
         # --- Filtr przez oceny   ---
         if rzad.vote_count > 100:
             wynik_koncowy = wynik_koncowy * (rzad.vote_average / 10.0)
         else:
             wynik_koncowy = wynik_koncowy * 0.5
-        """
+        
         # Zapisujemy tytul i wynik
         wyniki_podobienstwa.append((rzad.title, wynik_koncowy, rzad.vote_average))
 
@@ -216,11 +214,11 @@ def polec_filmy(id_filmu, df, ile_polecic=5):
 
 # polec_filmy(285, df, ile_polecic=10) #piraci z karaibow
 
-# polec_filmy(680, df, ile_polecic=10) #pulp fiction
+polec_filmy(680, df, ile_polecic=10) #pulp fiction
 
 # polec_filmy(10327, df, ile_polecic=10) #legalna blondynka
 
-polec_filmy(68718, df, ile_polecic=10)  # django
+#polec_filmy(68718, df, ile_polecic=10)  # django
 
 
 """
@@ -231,4 +229,6 @@ Funkcje do dodania:
 4. Bardziej/mniej polecane kolejne części z jednej serii (np. Piraci z Karaibów czy Władca pierścieni)
 5. 
 
+commit checkout 
+poszukac hash pierwszego commita
 """
